@@ -1,0 +1,283 @@
+
+header nav ul li a.active {
+    color: #94d2bd;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333333;
+    scroll-behavior: smooth; /* Scroll*/
+}
+
+
+header {
+    background-color: #051f08;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #94d2bd;
+}
+
+/* Seções */
+section {
+    padding: 80px 20px; /* Espaço entre as seções */
+    text-align: center;
+    min-height: 100vh; /* Cada seção ocupa pelo menos uma tela inteira */
+}
+
+section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #051f08;
+}
+
+p, ul {
+    margin: 10px auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Formulário */
+form {
+    display: inline-block;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Garante que os elementos internos não saiam do container */
+    margin-top: 20px;
+    position: relative;
+}
+
+
+form label {
+    font-weight: bold;
+    color: #051f08;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    font-weight: bold;
+}
+
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #888;
+    font-weight: bold;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #005f73;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
+}
+
+/* Botão */
+form button {
+    background-color: #051f08;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #94d2bd;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+/* Estilo geral */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Títulos */
+section h2, section h3 {
+    color: #051f08;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Listas */
+ul {
+    list-style-type: none; /* Remove as bolinhas */
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px; /* Centraliza e limita o tamanho */
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+ul li::before {
+    content: "•"; /* Adiciona bolinha customizada */
+    color: #051f08;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Mini-seções */
+div {
+    margin-bottom: 30px; /* Espaço entre "Formação Acadêmica" e "Cursos" */
+}
+/* Portfólio */
+section#portfolio {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Estilo dos projetos */
+.projeto {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.projeto h3 {
+    color: #005f73;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.projeto-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.projeto-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #005f73;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.projeto-link:hover {
+    background-color: #94d2bd;
+}
+
+/* Typewriter */
+.typewriter {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #051f08;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #051f08;
+    display: inline-block;
+    animation: blink-caret 0.5s step-end infinite;
+    text-align: center;
+}
+
+/* Efeito blinking cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #051f08; }
+}
+
+
+#contato {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 20px;
+    min-height: 100vh;
+    text-align: center;
+
+/* Usando o gif como fundo apenas na seção de contato */
+#background-constelacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/constelacao.gif') no-repeat center center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+/* Formulário */
+form {
+    display: inline-block;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+}

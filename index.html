@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Pedro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Sobre-->
+        <section id="sobre">
+            <h1>Sobre Mim</h1>
+            <div id="typewriter-text" class="typewriter"></div>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+                <img src="assets/foto.jpg" alt="Minha Foto" style="width: 150px; border-radius: 50%;">
+                <p>
+                    Olá, meu nome é Pedro. Sou apaixonado por cinema e tecnologia, e estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong>.
+                </p>
+            </div>
+        </section>
+        
+
+        <!--Formação -->
+        <section id="formacao">
+            <h2>Formação</h2>
+        
+            <!-- Formação Acadêmica -->
+            <div>
+                <h3>Formação Acadêmica</h3>
+                <ul>
+                    <li><strong>Análise e Desenvolvimento de Sistemas</strong> (2024 - 2026) - Uninter</li>
+                    <li><strong>Gestão de Recursos Humanos</strong> (2022 - 2024) - Unicid</li>
+                </ul>
+            </div>
+        
+            <!-- Cursos -->
+            <div>
+                <h3>Cursos</h3>
+                <ul>
+                    <li><strong>Fundamentos de Dados e Power BI</strong> - Fundação Bradesco</li>
+                    <li><strong>Metodologias Ágeis (Kanban e Scrum)</strong> - SEBRAE</li>
+                    <li><strong>Santander Coder 2024 - Back End Java</strong></li>
+                </ul>
+            </div>
+        </section>
+        
+
+        
+<!-- Portfólio -->
+<section id="portfolio">
+    <h2>Portfólio</h2>
+    <p>Confira alguns dos meus trabalhos:</p>
+    <ul>
+        <li>
+            <!-- Projeto 1 -->
+            <a href="#projeto1">Projeto 1: Programa de Transcrição</a>
+            <div id="projeto1" class="projeto">
+                <img src="assets/transcriptio.png" alt="Imagem do código do programa de transcrição" class="projeto-img">
+                <p>
+                    Este projeto é um programa de transcrição que desenvolvi usando Python. Ele processa áudios e converte a fala em texto de forma eficiente.
+                </p>
+                <a href="https://github.com/PedroRyanMagalhaes/virtual.assistant" target="_blank" class="projeto-link">Acesse o projeto no GitHub</a>
+            </div>
+        </li>
+        <li>
+            <!-- Projeto 2 -->
+            <a href="#projeto2">Projeto 2: Formulário em HTML</a>
+            <div id="projeto2" class="projeto">
+                <img src="assets/formulario1.jpg" alt="Imagem do formulário HTML" class="projeto-img">
+                <img src="assets/formulario2.jpg" alt="Imagem do formulário HTML" class="projeto-img">
+                <p>
+                    Este é um Quiz Musical simples criado em HTML e CSS.
+                </p>
+                <a href="https://github.com/PedroRyanMagalhaes/treinando-html-css" target="_blank" class="projeto-link">Acesse o projeto no GitHub</a>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+        <!--Contato-->
+<section id="contato">
+    <h2>Contato</h2>
+    <div id="background-constelacao"></div>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Pedro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
